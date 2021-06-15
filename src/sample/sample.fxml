@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <Button fx:id="juego" layoutX="28.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#onClickJuegos" text="Juegos" />
+      <Button fx:id="actua" layoutX="182.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#onClickActualizaciones" text="Actualizaciones" />
+      <ImageView fx:id="image1" fitHeight="82.0" fitWidth="104.0" layoutX="29.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/battle.png" />
+         </image></ImageView>
+      <ImageView fx:id="image2" fitHeight="82.0" fitWidth="104.0" layoutX="242.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/call.png" />
+         </image></ImageView>
+      <ImageView fx:id="image3" fitHeight="82.0" fitWidth="104.0" layoutX="464.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/doom.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="image6" fitHeight="82.0" fitWidth="104.0" layoutX="464.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/zelda.png" />
+         </image></ImageView>
+      <ImageView fx:id="image5" fitHeight="82.0" fitWidth="104.0" layoutX="242.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/ratchet.jpg" />
+         </image></ImageView>
+      <ImageView fx:id="image4" fitHeight="82.0" fitWidth="104.0" layoutX="29.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../imagenes/hollow.png" />
+         </image></ImageView>
+      <Label fx:id="label1" layoutX="67.0" layoutY="193.0" text="Label" />
+      <Label fx:id="label2" layoutX="280.0" layoutY="202.0" text="Label" />
+      <Label fx:id="label3" layoutX="502.0" layoutY="211.0" text="Label" />
+      <Label fx:id="label4" layoutX="67.0" layoutY="323.0" text="Label" />
+      <Label fx:id="label5" layoutX="280.0" layoutY="323.0" text="Label" />
+      <Label fx:id="label6" layoutX="502.0" layoutY="323.0" text="Label" />
+   </children>
+</AnchorPane>
