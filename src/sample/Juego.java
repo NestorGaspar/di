@@ -1,16 +1,25 @@
 package sample;
 
 public class Juego {
-    public boolean comprado = false;
+    public boolean comprado;
     public String nombre;
-    public String imagePath;
+    public String imagePathSinTick;
+    public String imagePathConTick;
 
 
-    public Juego(boolean comprado, String nombre, String imagePath){
+    public Juego(boolean comprado, String nombre, String imagePathSinTick, String imagePathConTick){
         this.comprado = comprado;
         this.nombre = nombre;
-        this.imagePath = imagePath;
+        this.imagePathSinTick = imagePathSinTick;
+        this.imagePathConTick = imagePathConTick;
+
     }
+
+    //public JuegoNoComprado(boolean comprado1, String nombre, String imagePath){
+      //  this.comprado1 = comprado1;
+        //this.nombre = nombre;
+        //this.imagePath = imagePath;
+   // }
 
 
 }

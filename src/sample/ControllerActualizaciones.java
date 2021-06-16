@@ -3,12 +3,12 @@ package sample;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 
-public class Controller3 {
+public class ControllerActualizaciones {
 
-    Controller controller1 = null;
+    ControllerMenuPrincipal controllerMenuPrincipal1 = null;
 
-    public void informacionEntreVentanas(Controller Controller){
-        controller1 = Controller;
+    public void informacionEntreVentanas(ControllerMenuPrincipal ControllerMenuPrincipal){
+        controllerMenuPrincipal1 = ControllerMenuPrincipal;
     }
 
     public void actualizacionFechal1(){
@@ -17,7 +17,7 @@ public class Controller3 {
         SimpleDateFormat formatoF = new SimpleDateFormat("dd-MM-YYYY kk:mm");
         Date fecha = new Date(tiempoA);
         String tiempo = formatoF.format(fecha);
-        controller1.label1.setText("" + tiempo);
+        controllerMenuPrincipal1.label1.setText("" + tiempo);
     }
     public void actualizacionFechal2(){
 
@@ -25,7 +25,7 @@ public class Controller3 {
         SimpleDateFormat formatoF = new SimpleDateFormat("dd-MM-YYYY kk:mm");
         Date fecha = new Date(tiempoA);
         String tiempo = formatoF.format(fecha);
-        controller1.label2.setText("" + tiempo);
+        controllerMenuPrincipal1.label2.setText("" + tiempo);
     }
     public void actualizacionFechal3(){
 
@@ -33,7 +33,7 @@ public class Controller3 {
         SimpleDateFormat formatoF = new SimpleDateFormat("dd-MM-YYYY kk:mm");
         Date fecha = new Date(tiempoA);
         String tiempo = formatoF.format(fecha);
-        controller1.label3.setText("" + tiempo);
+        controllerMenuPrincipal1.label3.setText("" + tiempo);
     }
     public void actualizacionFechal4(){
 
@@ -41,7 +41,7 @@ public class Controller3 {
         SimpleDateFormat formatoF = new SimpleDateFormat("dd-MM-YYYY kk:mm");
         Date fecha = new Date(tiempoA);
         String tiempo = formatoF.format(fecha);
-        controller1.label4.setText("" + tiempo);
+        controllerMenuPrincipal1.label4.setText("" + tiempo);
     }
     public void actualizacionFechal5(){
 
@@ -49,7 +49,7 @@ public class Controller3 {
         SimpleDateFormat formatoF = new SimpleDateFormat("dd-MM-YYYY kk:mm");
         Date fecha = new Date(tiempoA);
         String tiempo = formatoF.format(fecha);
-        controller1.label5.setText("" + tiempo);
+        controllerMenuPrincipal1.label5.setText("" + tiempo);
     }
     public void actualizacionFechal6(){
 
@@ -57,7 +57,7 @@ public class Controller3 {
         SimpleDateFormat formatoF = new SimpleDateFormat("dd-MM-YYYY kk:mm");
         Date fecha = new Date(tiempoA);
         String tiempo = formatoF.format(fecha);
-        controller1.label6.setText("" + tiempo);
+        controllerMenuPrincipal1.label6.setText("" + tiempo);
     }
 
 }
