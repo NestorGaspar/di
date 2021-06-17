@@ -56,19 +56,31 @@ public class ControllerMenuPrincipal {
         lstImage.add(image5);
         lstImage.add(image6);
 
-        Binder.bindJuego(j1, image1);
-        Binder.bindJuego(j2, image2);
-        Binder.bindJuego(j3, image3);
-        Binder.bindJuego(j4, image4);
-        Binder.bindJuego(j5, image5);
-        Binder.bindJuego(j6, image6);
+        image1.setVisible(false);
+        image2.setVisible(false);
+        image3.setVisible(false);
+        image4.setVisible(false);
+        image5.setVisible(false);
+        image6.setVisible(false);
 
+
+        //Binder.bindJuego(j1, image1);
+        //Binder.bindJuego(j2, image2);
+        //Binder.bindJuego(j3, image3);
+        //Binder.bindJuego(j4, image4);
+        //Binder.bindJuego(j5, image5);
+        //Binder.bindJuego(j6, image6);
 
     }
 
     @FXML
     public void onClickJuegos(){
         abrirInformacion(lstJuego);
+    }
+
+    @FXML
+    public void onClickActualizaciones(){
+        abrirInformacion2(lstJuego);
     }
 
     public void abrirInformacion (ArrayList<Juego> lstJuego){
@@ -80,8 +92,7 @@ public class ControllerMenuPrincipal {
             controllerJuegos = loader.getController();
             Scene scene = new Scene(root, 600, 400);
             stage.setScene(scene);
-            controllerJuegos.informacionEntreVentanas(lstJuego);
-            // TODO como enviar la lista de juegos
+            controllerJuegos.informacionEntreVentanas(lstJuego, this);
 
             stage.show();
         } catch (Exception e) {
@@ -89,18 +100,18 @@ public class ControllerMenuPrincipal {
         }
     }
 
-    @FXML
-    public void onClickActualizaciones(){
+
+
+    public void abrirInformacion2(ArrayList<Juego> lstJuego){
 
         try {
             Stage stage = new Stage();
             FXMLLoader loader = new FXMLLoader(getClass().getResource("sample3.fxml"));
             AnchorPane root = (AnchorPane) loader.load();
+            controllerActualizaciones = loader.getController();
             Scene scene = new Scene(root, 600, 400);
             stage.setScene(scene);
-
-            controllerActualizaciones = loader.getController();
-            controllerActualizaciones.informacionEntreVentanas(this);
+            controllerActualizaciones.informacionEntreVentanas(lstJuego, this);
 
             stage.show();
         } catch (Exception e) {
@@ -108,40 +119,13 @@ public class ControllerMenuPrincipal {
         }
     }
 
-    @FXML
-    public void onClickImage1(){
-        j1.comprado = !j1.comprado;
-        Binder.bindJuego(j1, image1);
-    }
-
-    @FXML
-    public void onClickImage2(){
-        j2.comprado = !j2.comprado;
-        Binder.bindJuego(j2, image2);
-    }
-
-    @FXML
-    public void onClickImage3(){
-        j3.comprado = !j3.comprado;
-        Binder.bindJuego(j3, image3);
-    }
-
-    @FXML
-    public void onClickImage4(){
-        j4.comprado = !j4.comprado;
-        Binder.bindJuego(j4, image4);
-    }
-
-    @FXML
-    public void onClickImage5(){
-        j5.comprado = !j5.comprado;
-        Binder.bindJuego(j5, image5);
-    }
-
-    @FXML
-    public void onClickImage6(){
-        j6.comprado = !j6.comprado;
-        Binder.bindJuego(j6, image6);
+    public void actualizarJuegos() {
+        Binder.bindJuegoOculto(lstJuego.get(0), image1, label1);
+        Binder.bindJuegoOculto(lstJuego.get(1), image2, label2);
+        Binder.bindJuegoOculto(lstJuego.get(2), image3, label3);
+        Binder.bindJuegoOculto(lstJuego.get(3), image4, label4);
+        Binder.bindJuegoOculto(lstJuego.get(4), image5, label5);
+        Binder.bindJuegoOculto(lstJuego.get(5), image6, label6);
     }
 
 }

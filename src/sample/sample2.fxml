@@ -1,39 +1,45 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
 <AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerJuegos">
    <children>
-      <ImageView fx:id="image1" fitHeight="84.0" fitWidth="109.0" layoutX="30.0" layoutY="158.0" onMouseClicked="#onClickImagen1" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image1" fitHeight="72.0" fitWidth="146.0" layoutX="21.0" layoutY="152.0" onMouseClicked="#onClickImagen1" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/battle.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="image2" fitHeight="84.0" fitWidth="109.0" layoutX="224.0" layoutY="144.0" onMouseClicked="#onClickImagen2" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image2" fitHeight="88.0" fitWidth="152.0" layoutX="224.0" layoutY="132.0" onMouseClicked="#onClickImagen2" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/call.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="image3" fitHeight="84.0" fitWidth="109.0" layoutX="426.0" layoutY="134.0" onMouseClicked="#onClickImagen3" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image3" fitHeight="103.0" fitWidth="140.0" layoutX="436.0" layoutY="123.0" onMouseClicked="#onClickImagen3" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/doom.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="image6" fitHeight="84.0" fitWidth="109.0" layoutX="426.0" layoutY="273.0" onMouseClicked="#onClickImagen6" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image6" fitHeight="86.0" fitWidth="140.0" layoutX="436.0" layoutY="266.0" onMouseClicked="#onClickImagen6" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/zelda.png" />
          </image>
       </ImageView>
-      <ImageView fx:id="image5" fitHeight="84.0" fitWidth="109.0" layoutX="224.0" layoutY="273.0" onMouseClicked="#onClickImagen5" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image5" fitHeight="74.0" fitWidth="140.0" layoutX="230.0" layoutY="266.0" onMouseClicked="#onClickImagen5" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/ratchet.jpg" />
          </image>
       </ImageView>
-      <ImageView fx:id="image4" fitHeight="84.0" fitWidth="109.0" layoutX="30.0" layoutY="277.0" onMouseClicked="#onClickImagen4" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image4" fitHeight="62.0" fitWidth="140.0" layoutX="24.0" layoutY="272.0" onMouseClicked="#onClickImagen4" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/hollow.png" />
          </image>
       </ImageView>
+      <Label layoutX="135.0" layoutY="37.0" text="BIBLIOTECA DE JUEGOS">
+         <font>
+            <Font name="Consolas Bold" size="30.0" />
+         </font></Label>
    </children>
 </AnchorPane>

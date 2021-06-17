@@ -5,6 +5,7 @@ public class Juego {
     public String nombre;
     public String imagePathSinTick;
     public String imagePathConTick;
+    public String fecha = null;
 
 
     public Juego(boolean comprado, String nombre, String imagePathSinTick, String imagePathConTick){
@@ -16,7 +17,7 @@ public class Juego {
     }
 
     //public JuegoNoComprado(boolean comprado1, String nombre, String imagePath){
-      //  this.comprado1 = comprado1;
+        //this.comprado1 = comprado1;
         //this.nombre = nombre;
         //this.imagePath = imagePath;
    // }

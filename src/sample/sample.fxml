@@ -3,32 +3,39 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
 
-<AnchorPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMenuPrincipal">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerMenuPrincipal">
    <children>
-      <Button fx:id="juego" layoutX="28.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#onClickJuegos" text="Juegos" />
-      <Button fx:id="actua" layoutX="182.0" layoutY="29.0" mnemonicParsing="false" onMouseClicked="#onClickActualizaciones" text="Actualizaciones" />
-      <ImageView fx:id="image1" fitHeight="82.0" fitWidth="104.0" layoutX="29.0" layoutY="147.0" onMouseClicked="#onClickImage1" pickOnBounds="true" preserveRatio="true">
+      <Button fx:id="juego" layoutX="14.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#onClickJuegos" prefHeight="59.0" prefWidth="215.0" style="-fx-background-color: white; -fx-border-color: black;" text="Biblioteca de Juegos">
+         <font>
+            <Font name="Consolas Bold" size="17.0" />
+         </font></Button>
+      <Button fx:id="actua" layoutX="418.0" layoutY="32.0" mnemonicParsing="false" onMouseClicked="#onClickActualizaciones" prefHeight="59.0" prefWidth="155.0" style="-fx-background-color: white; -fx-border-color: black;" text="Actualizaciones">
+         <font>
+            <Font name="System Bold" size="17.0" />
+         </font></Button>
+      <ImageView fx:id="image1" fitHeight="82.0" fitWidth="104.0" layoutX="29.0" layoutY="147.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/battle.png" />
          </image></ImageView>
-      <ImageView fx:id="image2" fitHeight="82.0" fitWidth="104.0" layoutX="242.0" layoutY="134.0" onMouseClicked="#onClickImage2" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image2" fitHeight="82.0" fitWidth="104.0" layoutX="242.0" layoutY="134.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/call.png" />
          </image></ImageView>
-      <ImageView fx:id="image3" fitHeight="82.0" fitWidth="104.0" layoutX="464.0" layoutY="125.0" onMouseClicked="#onClickImage3" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image3" fitHeight="82.0" fitWidth="104.0" layoutX="464.0" layoutY="125.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/doom.jpg" />
          </image></ImageView>
-      <ImageView fx:id="image6" fitHeight="82.0" fitWidth="104.0" layoutX="464.0" layoutY="269.0" onMouseClicked="#onClickImage6" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image6" fitHeight="82.0" fitWidth="104.0" layoutX="464.0" layoutY="269.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/zelda.png" />
          </image></ImageView>
-      <ImageView fx:id="image5" fitHeight="82.0" fitWidth="104.0" layoutX="242.0" layoutY="268.0" onMouseClicked="#onClickImage5" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image5" fitHeight="82.0" fitWidth="104.0" layoutX="242.0" layoutY="268.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/ratchet.jpg" />
          </image></ImageView>
-      <ImageView fx:id="image4" fitHeight="82.0" fitWidth="104.0" layoutX="29.0" layoutY="273.0" onMouseClicked="#onClickImage4" pickOnBounds="true" preserveRatio="true">
+      <ImageView fx:id="image4" fitHeight="82.0" fitWidth="104.0" layoutX="29.0" layoutY="273.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../imagenes/hollow.png" />
          </image></ImageView>
